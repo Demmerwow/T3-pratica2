@@ -1,0 +1,123 @@
+/* =========================================
+   RESET E VARIÁVEIS (Dark Premium)
+   ========================================= */
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #f4f4f4;
+    --accent-color: #e63946;
+    --card-bg: #151515;
+    --border-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.container-simulador {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 500px;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.8rem;
+    background: #000;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #b3001b;
+}
+
+/* Caixa de resultado */
+.resultado-box {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #000;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.resultado-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+#texto-resultado {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    color: #666;
+}
